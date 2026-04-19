@@ -81,6 +81,7 @@ export const projects: Project[] = [
     challenges: `Achieving a sense of luxury without visual clutter, while designing distinct spaces for family members with different needs — including a playful yet refined children's room.`,
     solutions: `A strict neutral palette with warm cove lighting creates cohesion across all rooms. Custom furniture pieces and curated accents serve as focal points without overwhelming the space.`,
     tags: ['Minimalist', 'Villa', 'Luxury', 'Residential', 'White Interiors'],
+    videoUrl: 'https://youtu.be/88GrtHcljXE',
   },
   {
     id: '2',
@@ -135,7 +136,7 @@ export const projects: Project[] = [
     challenges: `Creating a consistent sense of luxury across a large 4BHK footprint while keeping the design feeling intimate and personal rather than hotel-like.`,
     solutions: `A warm, rose-gold and ivory palette runs through all spaces, while custom millwork and personal touches make the apartment feel distinctly tailored to its owners.`,
     tags: ['Luxury', 'Rose Gold', '4BHK', 'Marble', 'Sophisticated'],
-    videoUrl: 'https://youtu.be/zqCSHp4NWu4?si=7pWuXYGLCKVTEaHS',
+    videoUrl: 'https://youtu.be/6skiWI3z8g8',
   },
   {
     id: '3',
@@ -182,7 +183,7 @@ export const projects: Project[] = [
     size: '1,200 sq ft',
     status: 'completed',
     featured: false,
-    thumbnail: 'https://res.cloudinary.com/dpv8br6pe/image/upload/v1776594353/samay/event-office/nm-00003.jpg',
+    thumbnail: 'https://res.cloudinary.com/dpv8br6pe/image/upload/v1776594362/samay/event-office/nm-00055.jpg',
     images: [
       'https://res.cloudinary.com/dpv8br6pe/image/upload/v1776594353/samay/event-office/nm-00003.jpg',
       'https://res.cloudinary.com/dpv8br6pe/image/upload/v1776594354/samay/event-office/nm-00023.jpg',
@@ -210,7 +211,7 @@ export const projects: Project[] = [
     ],
     description: `A focused, high-performance office workspace designed for efficiency. A custom multi-monitor workstation setup in a clean, minimal environment — purpose-built for long hours of precision work.`,
     tags: ['Commercial', 'Office', 'Workspace', 'Minimal'],
-    videoUrl: 'https://youtu.be/xMyVu1XXDu0?si=OBrFpNyGFFda83T5',
+    videoUrl: 'https://youtu.be/xMyVu1XXDu0',
   },
   {
     id: '5',
@@ -279,6 +280,7 @@ export const projects: Project[] = [
     ],
     description: `A thoughtfully designed 3BHK residence at Indraprashtha Greens. Clean layouts, functional storage, and a warm material palette create a comfortable and stylish home.`,
     tags: ['Residential', '3BHK', 'Apartment', 'Modern'],
+    videoUrl: 'https://youtu.be/dYkegbOqFI0',
   },
   {
     id: '7',
@@ -510,6 +512,7 @@ export const projects: Project[] = [
     ],
     description: `An extensively documented 3BHK residence at Ratnakaar Pristine. Every room meticulously designed with premium materials, layered lighting, and bespoke furniture.`,
     tags: ['Residential', '3BHK', 'Apartment', 'Luxury', 'Premium'],
+    videoUrl: 'https://youtu.be/DE7-zH3b6Hw',
   },
   {
     id: '11',
@@ -904,7 +907,7 @@ export const projects: Project[] = [
     size: '1,400 sq ft',
     status: 'completed',
     featured: false,
-    thumbnail: 'https://res.cloudinary.com/dpv8br6pe/image/upload/v1776603408/samay/aristo-blaze/-04a8249.jpg',
+    thumbnail: 'https://res.cloudinary.com/dpv8br6pe/image/upload/v1776603461/samay/aristo-blaze/-04a8339.jpg',
     images: [
       'https://res.cloudinary.com/dpv8br6pe/image/upload/v1776603408/samay/aristo-blaze/-04a8249.jpg',
       'https://res.cloudinary.com/dpv8br6pe/image/upload/v1776603410/samay/aristo-blaze/-04a8251.jpg',

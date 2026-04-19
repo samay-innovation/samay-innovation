@@ -175,7 +175,7 @@ function ProjectCard({ project, index, isHovered, onHover, onLeave }: CardProps)
       {/* Image */}
       <div className="relative overflow-hidden aspect-[4/5] mb-4">
         <img
-          src={project.images[0]}
+          src={project.thumbnail}
           alt={project.title}
           className="w-full h-full object-cover transition-transform duration-[1.1s] ease-out group-hover:scale-[1.04]"
         />
@@ -263,7 +263,7 @@ function InternationalSection() {
                 {/* Full-bleed image */}
                 <div className="relative h-[420px] md:h-[520px] overflow-hidden">
                   <img
-                    src={project.images[0]}
+                    src={project.thumbnail}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-[1.06]"
                   />

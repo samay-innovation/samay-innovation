@@ -16,14 +16,32 @@ function getColSpan(index: number, total: number): string {
   return 'lg:col-span-3';                      // two leftovers → half each
 }
 
+function pickSlideImages(images: string[], thumbnail: string): string[] {
+  const pool = images.length > 1 ? images.filter(img => img !== thumbnail) : images;
+  const shuffled = [...pool].sort(() => Math.random() - 0.5);
+  const picks = shuffled.slice(0, 4);
+  return [thumbnail, ...picks];
+}
+
 export default function ProjectDetails() {
   const { slug } = useParams<{ slug: string }>();
   const project = getProjectBySlug(slug || '');
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
+  const [slideIndex, setSlideIndex] = useState(0);
+  const [slideImages, setSlideImages] = useState<string[]>([]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    if (project) setSlideImages(pickSlideImages(project.images, project.thumbnail));
   }, [slug]);
+
+  useEffect(() => {
+    if (slideImages.length === 0) return;
+    const timer = setInterval(() => {
+      setSlideIndex(i => (i + 1) % slideImages.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, [slideImages]);
 
   if (!project) {
     return (
@@ -59,16 +77,27 @@ export default function ProjectDetails() {
         ]}
       />
 
-      {/* ── Hero ── */}
+      {/* ── Hero Slideshow ── */}
       <section className="relative h-[70vh] md:h-screen overflow-hidden bg-[#0b1012]">
-        <motion.img
-          initial={{ scale: 1.08 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 1.6, ease: 'easeOut' }}
-          src={project.images[0]}
-          alt={project.title}
-          className="w-full h-full object-cover"
-        />
+        <AnimatePresence mode="sync">
+          {slideImages.map((src, i) =>
+            i === slideIndex ? (
+              <motion.img
+                key={src + i}
+                src={src}
+                alt={project.title}
+                initial={{ opacity: 0, scale: 1.1 }}
+                animate={{ opacity: 1, scale: [1.08, 1.03, 1.08] }}
+                exit={{ opacity: 0, scale: 1.05 }}
+                transition={{
+                  opacity: { duration: 1.2, ease: 'easeInOut' },
+                  scale: { duration: 6, ease: 'easeInOut', repeat: Infinity, repeatType: 'mirror' },
+                }}
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            ) : null
+          )}
+        </AnimatePresence>
         <div className="absolute inset-0 bg-gradient-to-t from-[#0b1012]/90 via-black/30 to-black/20" />
 
         {/* Back */}
