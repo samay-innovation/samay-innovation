@@ -8,26 +8,38 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PHOTOS_ROOT = path.join(__dirname, '../samay-innovation-photos');
 const OUTPUT_FILE = path.join(__dirname, '../src/data/cloudinary-urls.json');
 
-// ⚠️  Regenerate your API secret after this run: Cloudinary Dashboard → Settings → Security
 cloudinary.config({
-  cloud_name: 'diojzujpv',
-  api_key: '243874697819765',
-  api_secret: '3Aib_fyjyLQBbbBJJP4TypHAiY8',
+  cloud_name: 'dpv8br6pe',
+  api_key: '143469487193317',
+  api_secret: 'oP1KC6gxz9zuDD6zNyyBbMr7Cts',
 });
 
+// Fresh client account — overwrite: false for all (nothing exists yet)
 const PROJECT_FOLDERS = {
-  // ── Already uploaded — skip ──────────────────────────────────────────────
-  // 'ARVIND VILLA NO 6 KHATRAJ':   { slug: 'arvind-villa-khatraj',  name: 'Arvind Villa No. 6, Khatraj', type: 'residential' },
-  // 'FARMHOUSE PICS AT RANCHARDA': { slug: 'farmhouse-rancharda',   name: 'Farmhouse at Rancharda',      type: 'residential' },
-  // 'Indraprashtha':               { slug: 'indraprashtha',         name: 'Indraprashtha',               type: 'residential' },
-  // 'PARIJAAT ECLAT 4BHK PHOTOS':  { slug: 'parijaat-eclat-4bhk',  name: 'Parijaat Eclat 4BHK',         type: 'residential' },
-  // 'Venice Bunglows Watermarked': { slug: 'venice-bungalows',      name: 'Venice Bungalows',            type: 'residential' },
-  // 'Ashutosh Kumar 3BHK':         { slug: 'ashutosh-kumar-3bhk',   name: 'Ashutosh Kumar 3BHK',         type: 'residential' },
-  // 'EVENT OFFICE':                { slug: 'event-office',          name: 'Event Office',                type: 'commercial'  },
+  // ── Existing projects (updated photos from client) ────────────────────────
+  '4BHK-ARVIND VILLA NO 6 KHATRAJ':             { slug: 'arvind-villa-khatraj',       name: 'Arvind Villa No. 6, Khatraj',       type: 'residential', overwrite: false },
+  '4BHK PARIJAAT ECLAAT':                       { slug: 'parijaat-eclat-4bhk',        name: 'Parijaat Eclat 4BHK',               type: 'residential', overwrite: false },
+  'COMMERCIAL-EVENT MANAGEMENT OFFICE-AMALGA':  { slug: 'event-office',               name: 'Event Office (Amalga)',             type: 'commercial',  overwrite: false },
+  'COMMERCIAL-RESTAURANT IN LA, USA':           { slug: 'usa-restaurant-la',           name: 'Restaurant Interior, Los Angeles',  type: 'hospitality', overwrite: false },
+  'FARMHOUSE-RANCHARDA':                        { slug: 'farmhouse-rancharda',         name: 'Farmhouse at Rancharda',            type: 'residential', overwrite: false },
 
-  // ── New international projects ───────────────────────────────────────────
-  'RAVELLO ITALY':               { slug: 'ravello-italy',          name: 'Ravello, Italy',              type: 'hospitality' },
-  'USA RESTAURANT IN LA':        { slug: 'usa-restaurant-la',      name: 'USA Restaurant in LA',        type: 'hospitality' },
+  // ── New residential projects ──────────────────────────────────────────────
+  '3BHK-INDRAPRASTH GREEN A BLOCK':             { slug: 'indraprashtha-green-a',       name: 'Indraprashtha Greens, A Block',     type: 'residential', overwrite: false },
+  '3BHK-INDRAPRASTH GREENS F BLOCK':            { slug: 'indraprashtha-green-f',       name: 'Indraprashtha Greens, F Block',     type: 'residential', overwrite: false },
+  '3BHK-MAPLE TREE F BLOCK':                    { slug: 'maple-tree-f-block',          name: 'Maple Tree, F Block',               type: 'residential', overwrite: false },
+  '3BHK-PANCHAM PENTAGON':                      { slug: 'pancham-pentagon',            name: 'Pancham Pentagon',                  type: 'residential', overwrite: false },
+  '3BHK-RATNAKAAR PRISTINE':                    { slug: 'ratnakaar-pristine',          name: 'Ratnakaar Pristine',                type: 'residential', overwrite: false },
+  '4BHK + HOMETHEATRE-VALENCIA RAJKOT':         { slug: 'valencia-rajkot',             name: 'Valencia Rajkot',                   type: 'residential', overwrite: false },
+  '4BHK-GIRIRAJ AMBAVADI':                      { slug: 'giriraj-ambavadi',            name: 'Giriraj Ambavadi',                  type: 'residential', overwrite: false },
+  '4BHK-POPLAR DOMAIN':                         { slug: 'poplar-domain',               name: 'Poplar Domain',                     type: 'residential', overwrite: false },
+  '4BHK-SHILP SHALIGRAM':                       { slug: 'shilp-shaligram',             name: 'Shilp Shaligram',                   type: 'residential', overwrite: false },
+
+  // ── New commercial / hospitality projects ────────────────────────────────
+  'COMMERCIAL-BEFIT PHYSIOTHERAPY CLINIC':      { slug: 'befit-physiotherapy',         name: 'Befit Physiotherapy Clinic',        type: 'commercial',  overwrite: false },
+  'COMMERCIAL-IMPORT & EXPORT OFFICE SHIVALIK': { slug: 'import-export-shivalik',      name: 'Import & Export Office, Shivalik',  type: 'commercial',  overwrite: false },
+  'COMMERCIAL-IT OFFICE STRATUM FOCUS':         { slug: 'stratum-focus-it-office',     name: 'IT Office – Stratum Focus',         type: 'commercial',  overwrite: false },
+  'COMMERCIAL-LAMHAA RESTAURANT NJ,USA':        { slug: 'lamhaa-restaurant-nj',        name: 'Lamhaa Restaurant, New Jersey',     type: 'hospitality', overwrite: false },
+  'COMMERCIAL-LUXURY LOUNGE IN USA':            { slug: 'luxury-lounge-usa',           name: 'Luxury Lounge, USA',                type: 'hospitality', overwrite: false },
 };
 
 const IMAGE_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.webp'];
@@ -60,7 +72,7 @@ async function uploadProject(folderName, projectInfo) {
     return [];
   }
 
-  console.log(`\n📁 ${projectInfo.name} (${images.length} images)`);
+  console.log(`\n📁 ${projectInfo.name} (${images.length} images, overwrite: ${projectInfo.overwrite})`);
   const urls = [];
 
   for (let i = 0; i < images.length; i++) {
@@ -73,12 +85,11 @@ async function uploadProject(folderName, projectInfo) {
       const uploadOptions = {
         folder: `samay/${projectInfo.slug}`,
         public_id: publicId,
-        overwrite: false,
+        overwrite: projectInfo.overwrite,
       };
 
       let result;
       if (fileSize > 9 * 1024 * 1024) {
-        // Compress in memory before uploading — keeps quality high, brings size under 10MB
         const buffer = await sharp(imagePath).jpeg({ quality: 82 }).toBuffer();
         result = await new Promise((resolve, reject) => {
           const stream = cloudinary.uploader.upload_stream(uploadOptions, (err, res) => {
