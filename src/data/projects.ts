@@ -401,6 +401,7 @@ export const projects: Project[] = [
     ],
     description: `A vibrant 3BHK apartment at Pancham Pentagon, blending bold design choices with functional living spaces that reflect the personality of its residents.`,
     tags: ['Residential', '3BHK', 'Apartment', 'Contemporary'],
+    videoUrl: 'https://youtu.be/Um4iMJQ0JT8',
   },
   {
     id: '10',
@@ -620,6 +621,7 @@ export const projects: Project[] = [
     ],
     description: `A sophisticated 4BHK apartment in Ambavadi with a premium material palette, custom millwork, and an interior language that balances boldness with livability.`,
     tags: ['Residential', '4BHK', 'Apartment', 'Sophisticated'],
+    videoUrl: 'https://youtu.be/XfFlB5KAQUU',
   },
   {
     id: '13',
@@ -703,6 +705,7 @@ export const projects: Project[] = [
     ],
     description: `A polished 4BHK interior at Shilp Shaligram — premium finishes, layered lighting design, and thoughtful spatial flow from entry to bedroom.`,
     tags: ['Residential', '4BHK', 'Apartment', 'Premium'],
+    videoUrl: 'https://youtu.be/5iGDprIIHCE',
   },
   {
     id: '15',
@@ -740,6 +743,7 @@ export const projects: Project[] = [
     ],
     description: `A calming, clinical-grade interior for Befit Physiotherapy — designed to instil confidence and comfort in patients while maintaining a clean, professional environment.`,
     tags: ['Commercial', 'Clinic', 'Healthcare', 'Minimal'],
+    videoUrl: 'https://youtu.be/rDh9fBW37o0',
   },
   {
     id: '16',
@@ -822,6 +826,7 @@ export const projects: Project[] = [
     ],
     description: `A dynamic IT office interior for Stratum Focus — open collaborative zones, focused workstations, and a bold brand identity woven into the spatial design.`,
     tags: ['Commercial', 'IT Office', 'Tech', 'Workspace', 'Corporate'],
+    videoUrl: 'https://youtu.be/-qvSZg0zmaM',
   },
   {
     id: '18',
@@ -970,6 +975,7 @@ export const projects: Project[] = [
     ],
     description: `A stylish 3BHK apartment at Elite Mars, A Block — thoughtfully designed with a cohesive palette and smart space planning.`,
     tags: ['Residential', '3BHK', 'Apartment', 'Contemporary'],
+    videoUrl: 'https://youtu.be/yWTRl4oCLbQ',
   },
   {
     id: '22',
@@ -1035,6 +1041,7 @@ export const projects: Project[] = [
     ],
     description: `A vibrant 3BHK residence at Greenz Turquoise, Shela — rich textures, layered lighting, and a design language that is both fresh and refined.`,
     tags: ['Residential', '3BHK', 'Apartment', 'Contemporary'],
+    videoUrl: 'https://youtu.be/en9ON9t_0kI',
   },
   {
     id: '23',
@@ -1064,6 +1071,7 @@ export const projects: Project[] = [
     ],
     description: `A compact yet elegant 3BHK at Sheetal West Park, Vastrapur — every square foot purposefully designed for modern family living.`,
     tags: ['Residential', '3BHK', 'Apartment', 'Modern'],
+    videoUrl: 'https://youtu.be/jjfuxNnDOH8',
   },
   {
     id: '24',
@@ -1219,6 +1227,7 @@ export const projects: Project[] = [
     ],
     description: `A warm and welcoming 4BHK villa at Yatkrupa Society, Anand — classic sensibilities elevated with contemporary detailing and bespoke joinery.`,
     tags: ['Residential', '4BHK', 'Villa', 'Anand', 'Gujarat'],
+    videoUrl: 'https://youtu.be/EvBlFFzwTlg',
   },
   {
     id: '27',
