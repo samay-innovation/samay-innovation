@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Core pages -->
+  <url>
+    <loc>https://samayinnovation.in/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://samayinnovation.in/portfolio</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://samayinnovation.in/services</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://samayinnovation.in/about</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://samayinnovation.in/blogs</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://samayinnovation.in/contact</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Portfolio: Arvind Villa No. 6, Khatraj -->
+  <url>
+    <loc>https://samayinnovation.in/portfolio/arvind-villa-khatraj</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/diojzujpv/image/upload/v1774166684/samay/arvind-villa-khatraj/nm-08573.jpg</image:loc>
+      <image:title>Arvind Villa No. 6, Khatraj — Luxury Minimalist Interior Design Ahmedabad</image:title>
+    </image:image>
+  </url>
+
+  <!-- Portfolio: Venice Bungalows -->
+  <url>
+    <loc>https://samayinnovation.in/portfolio/venice-bungalows</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/diojzujpv/image/upload/v1774168098/samay/venice-bungalows/01.jpg</image:loc>
+      <image:title>Venice Bungalows — Contemporary Luxury Interior Design Anand Gujarat</image:title>
+    </image:image>
+  </url>
+
+  <!-- Portfolio: Indraprashtha Residence -->
+  <url>
+    <loc>https://samayinnovation.in/portfolio/indraprashtha</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/diojzujpv/image/upload/v1774166998/samay/indraprashtha/01.jpg</image:loc>
+      <image:title>Indraprashtha Residence — Warm Contemporary Apartment Interior Ahmedabad</image:title>
+    </image:image>
+  </url>
+
+  <!-- Portfolio: Parijaat Eclat 4BHK -->
+  <url>
+    <loc>https://samayinnovation.in/portfolio/parijaat-eclat-4bhk</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/diojzujpv/image/upload/v1774167469/samay/parijaat-eclat-4bhk/nm-00071.jpg</image:loc>
+      <image:title>Parijaat Eclat 4BHK — Rose Gold Luxury Apartment Interior Ahmedabad</image:title>
+    </image:image>
+  </url>
+
+  <!-- Portfolio: Farmhouse at Rancharda -->
+  <url>
+    <loc>https://samayinnovation.in/portfolio/farmhouse-rancharda</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/diojzujpv/image/upload/v1774168974/samay/farmhouse-rancharda/nm-08744.jpg</image:loc>
+      <image:title>Farmhouse at Rancharda — Dramatic Bar Lounge Interior Design Ahmedabad</image:title>
+    </image:image>
+  </url>
+
+  <!-- Portfolio: Ashutosh Kumar 3BHK -->
+  <url>
+    <loc>https://samayinnovation.in/portfolio/ashutosh-kumar-3bhk</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Portfolio: Event Office -->
+  <url>
+    <loc>https://samayinnovation.in/portfolio/event-office</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

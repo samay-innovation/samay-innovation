@@ -1,0 +1,23 @@
+{
+  "ravello-italy": {
+    "name": "Ravello, Italy",
+    "type": "hospitality",
+    "images": [
+      "https://res.cloudinary.com/diojzujpv/image/upload/v1774692405/samay/ravello-italy/img-20241128-wa0265-1-.jpg",
+      "https://res.cloudinary.com/diojzujpv/image/upload/v1774692407/samay/ravello-italy/img-20241128-wa0266-1-.jpg",
+      "https://res.cloudinary.com/diojzujpv/image/upload/v1774692408/samay/ravello-italy/img-20241128-wa0267-1-.jpg",
+      "https://res.cloudinary.com/diojzujpv/image/upload/v1774692409/samay/ravello-italy/img-20241128-wa0268-1-.jpg"
+    ]
+  },
+  "usa-restaurant-la": {
+    "name": "USA Restaurant in LA",
+    "type": "hospitality",
+    "images": [
+      "https://res.cloudinary.com/diojzujpv/image/upload/v1774692412/samay/usa-restaurant-la/20250206-234537.jpg",
+      "https://res.cloudinary.com/diojzujpv/image/upload/v1774692414/samay/usa-restaurant-la/img-20250206-wa0330.jpg",
+      "https://res.cloudinary.com/diojzujpv/image/upload/v1774692415/samay/usa-restaurant-la/img-20250206-wa0331.jpg",
+      "https://res.cloudinary.com/diojzujpv/image/upload/v1774692416/samay/usa-restaurant-la/img-20250206-wa0332.jpg",
+      "https://res.cloudinary.com/diojzujpv/image/upload/v1774692418/samay/usa-restaurant-la/img-20250206-wa0333.jpg"
+    ]
+  }
+}

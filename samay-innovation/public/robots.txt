@@ -1,0 +1,17 @@
+# robots.txt — Samay Innovation
+# https://samayinnovation.in
+
+User-agent: *
+Allow: /
+
+# Block dev/build artifacts
+Disallow: /src/
+Disallow: /.env
+Disallow: /node_modules/
+
+# Hidden routes — not for public indexing
+Disallow: /client-review
+Disallow: /samay-admin
+
+# Sitemap
+Sitemap: https://samayinnovation.in/sitemap.xml

@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git checkout:*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "A file was just written or edited. The tool input is: $ARGUMENTS\n\nIf the file path ends in .tsx, .jsx, .html, or .mdx AND appears to be a page or layout component (not a utility, hook, or config file), perform a quick SEO audit:\n1. Is there a <title> or Next.js metadata export?\n2. Is there a meta description?\n3. Do all <img> tags have alt text?\n4. Is there exactly one <h1> heading?\n5. Are Open Graph tags (og:title, og:description, og:image) present?\n6. Is there a canonical URL?\n\nIf SEO elements are missing, return them as additionalContext so the developer is aware. If the file is not a page/layout component, or if all SEO elements are present, return no issues.",
+            "statusMessage": "Running SEO audit...",
+            "timeout": 45
+          }
+        ]
+      }
+    ]
+  }
+}

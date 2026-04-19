@@ -1,0 +1,244 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enable class-based dark mode for Tailwind v4 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Font Family - Outfit from Google Fonts */
+  --font-family-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+
+  /* Color Palette - Light Mode */
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #FAFAFA;
+  --color-bg-tertiary: #F5F5F5;
+  --color-bg-dark-section: #1E1E1E;
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #4A4A4A;
+  --color-text-tertiary: #757575;
+  --color-accent-primary: #C9A97A;
+  --color-accent-secondary: #D4B896;
+  --color-accent-tertiary: #E8D5C4;
+  --color-accent-hover: #B38B5D;
+  --color-border-light: #E5E5E5;
+  --color-border-medium: #CCCCCC;
+  --color-border-dark: #333333;
+
+  /* Fluid Glass Design System */
+  --color-cream: #fafaf8;
+  --color-cream-secondary: #ede9e3;
+  --color-cream-border: #ddd8d0;
+  --color-near-black: #0b1012;
+
+  /* Dark Mode Colors */
+  --color-dark-bg-primary: #0A0A0A;
+  --color-dark-bg-secondary: #1A1A1A;
+  --color-dark-bg-tertiary: #2A2A2A;
+  --color-dark-text-primary: #FFFFFF;
+  --color-dark-text-secondary: #E0E0E0;
+  --color-dark-text-tertiary: #A0A0A0;
+
+  /* Typography Scale */
+  --font-size-h1-desktop: 64px;
+  --font-size-h2-desktop: 48px;
+  --font-size-h3-desktop: 36px;
+  --font-size-h4-desktop: 28px;
+  --font-size-h5-desktop: 24px;
+  --font-size-h1-mobile: 40px;
+  --font-size-h2-mobile: 32px;
+  --font-size-h3-mobile: 28px;
+  --font-size-h4-mobile: 24px;
+  --font-size-h5-mobile: 20px;
+  --font-size-body-large: 20px;
+  --font-size-body-regular: 16px;
+  --font-size-body-small: 14px;
+  --font-size-caption: 12px;
+
+  /* Animations */
+  --animate-fade-in: fadeIn 0.6s ease-in-out;
+  --animate-fade-in-up: fadeInUp 0.6s ease-in-out;
+  --animate-scale-in: scaleIn 0.5s ease-in-out;
+  --animate-slide-in-right: slideInRight 0.5s ease-in-out;
+
+  /* Shadows */
+  --shadow-soft: 0 2px 15px rgba(0, 0, 0, 0.08);
+  --shadow-medium: 0 4px 25px rgba(0, 0, 0, 0.12);
+  --shadow-strong: 0 10px 40px rgba(0, 0, 0, 0.16);
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { 
+    opacity: 0; 
+    transform: translateY(40px); 
+  }
+  100% { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes scaleIn {
+  0% { 
+    opacity: 0; 
+    transform: scale(0.9); 
+  }
+  100% { 
+    opacity: 1; 
+    transform: scale(1); 
+  }
+}
+
+@keyframes slideInRight {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(0); }
+}
+
+/* Base Styles */
+* {
+  border-color: var(--color-border-light);
+}
+
+.dark * {
+  border-color: var(--color-border-dark);
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-sans);
+  margin: 0;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark body {
+  background-color: var(--color-dark-bg-primary);
+  color: var(--color-dark-text-primary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide Scrollbar */
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Custom Scrollbar - Hidden by default */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-accent-tertiary);
+  color: var(--color-text-primary);
+}
+
+.dark ::selection {
+  background-color: var(--color-accent-secondary);
+  color: var(--color-dark-bg-primary);
+}
+
+/* Focus Styles */
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-bg-primary), 0 0 0 4px var(--color-accent-primary);
+}
+
+.dark *:focus-visible {
+  box-shadow: 0 0 0 2px var(--color-dark-bg-primary), 0 0 0 4px var(--color-accent-secondary);
+}
+
+/* Utility Classes */
+.text-gradient {
+  background: linear-gradient(to right, var(--color-accent-primary), var(--color-accent-secondary), var(--color-accent-tertiary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(229, 229, 229, 0.5);
+}
+
+.dark .glass {
+  background-color: rgba(10, 10, 10, 0.8);
+  border-color: rgba(51, 51, 51, 0.5);
+}
+
+.container-custom {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;   /* 24px — mobile */
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .container-custom {
+    padding-left: 2rem;   /* 32px — small tablet */
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-custom {
+    padding-left: 2.5rem; /* 40px — tablet */
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-custom {
+    padding-left: 4rem;   /* 64px — desktop */
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-custom {
+    padding-left: 5rem;   /* 80px — wide desktop */
+    padding-right: 5rem;
+  }
+}
+
+.section-padding {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
