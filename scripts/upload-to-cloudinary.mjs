@@ -14,32 +14,38 @@ cloudinary.config({
   api_secret: 'oP1KC6gxz9zuDD6zNyyBbMr7Cts',
 });
 
-// Fresh client account — overwrite: false for all (nothing exists yet)
 const PROJECT_FOLDERS = {
-  // ── Existing projects (updated photos from client) ────────────────────────
-  '4BHK-ARVIND VILLA NO 6 KHATRAJ':             { slug: 'arvind-villa-khatraj',       name: 'Arvind Villa No. 6, Khatraj',       type: 'residential', overwrite: false },
-  '4BHK PARIJAAT ECLAAT':                       { slug: 'parijaat-eclat-4bhk',        name: 'Parijaat Eclat 4BHK',               type: 'residential', overwrite: false },
-  'COMMERCIAL-EVENT MANAGEMENT OFFICE-AMALGA':  { slug: 'event-office',               name: 'Event Office (Amalga)',             type: 'commercial',  overwrite: false },
-  'COMMERCIAL-RESTAURANT IN LA, USA':           { slug: 'usa-restaurant-la',           name: 'Restaurant Interior, Los Angeles',  type: 'hospitality', overwrite: false },
-  'FARMHOUSE-RANCHARDA':                        { slug: 'farmhouse-rancharda',         name: 'Farmhouse at Rancharda',            type: 'residential', overwrite: false },
+  // ── Already uploaded — skip ───────────────────────────────────────────────
+  // '4BHK-ARVIND VILLA NO 6 KHATRAJ':             { slug: 'arvind-villa-khatraj',       name: 'Arvind Villa No. 6, Khatraj',       type: 'residential', overwrite: false },
+  // '4BHK PARIJAAT ECLAAT':                       { slug: 'parijaat-eclat-4bhk',        name: 'Parijaat Eclat 4BHK',               type: 'residential', overwrite: false },
+  // 'COMMERCIAL-EVENT MANAGEMENT OFFICE-AMALGA':  { slug: 'event-office',               name: 'Event Office (Amalga)',             type: 'commercial',  overwrite: false },
+  // 'COMMERCIAL-RESTAURANT IN LA, USA':           { slug: 'usa-restaurant-la',           name: 'Restaurant Interior, Los Angeles',  type: 'hospitality', overwrite: false },
+  // 'FARMHOUSE-RANCHARDA':                        { slug: 'farmhouse-rancharda',         name: 'Farmhouse at Rancharda',            type: 'residential', overwrite: false },
+  // '3BHK-INDRAPRASTH GREEN A BLOCK':             { slug: 'indraprashtha-green-a',       name: 'Indraprashtha Greens, A Block',     type: 'residential', overwrite: false },
+  // '3BHK-INDRAPRASTH GREENS F BLOCK':            { slug: 'indraprashtha-green-f',       name: 'Indraprashtha Greens, F Block',     type: 'residential', overwrite: false },
+  // '3BHK-MAPLE TREE F BLOCK':                    { slug: 'maple-tree-f-block',          name: 'Maple Tree, F Block',               type: 'residential', overwrite: false },
+  // '3BHK-PANCHAM PENTAGON':                      { slug: 'pancham-pentagon',            name: 'Pancham Pentagon',                  type: 'residential', overwrite: false },
+  // '3BHK-RATNAKAAR PRISTINE':                    { slug: 'ratnakaar-pristine',          name: 'Ratnakaar Pristine',                type: 'residential', overwrite: false },
+  // '4BHK + HOMETHEATRE-VALENCIA RAJKOT':         { slug: 'valencia-rajkot',             name: 'Valencia Rajkot',                   type: 'residential', overwrite: false },
+  // '4BHK-GIRIRAJ AMBAVADI':                      { slug: 'giriraj-ambavadi',            name: 'Giriraj Ambavadi',                  type: 'residential', overwrite: false },
+  // '4BHK-POPLAR DOMAIN':                         { slug: 'poplar-domain',               name: 'Poplar Domain',                     type: 'residential', overwrite: false },
+  // '4BHK-SHILP SHALIGRAM':                       { slug: 'shilp-shaligram',             name: 'Shilp Shaligram',                   type: 'residential', overwrite: false },
+  // 'COMMERCIAL-BEFIT PHYSIOTHERAPY CLINIC':      { slug: 'befit-physiotherapy',         name: 'Befit Physiotherapy Clinic',        type: 'commercial',  overwrite: false },
+  // 'COMMERCIAL-IMPORT & EXPORT OFFICE SHIVALIK': { slug: 'import-export-shivalik',      name: 'Import & Export Office, Shivalik',  type: 'commercial',  overwrite: false },
+  // 'COMMERCIAL-IT OFFICE STRATUM FOCUS':         { slug: 'stratum-focus-it-office',     name: 'IT Office – Stratum Focus',         type: 'commercial',  overwrite: false },
+  // 'COMMERCIAL-LAMHAA RESTAURANT NJ,USA':        { slug: 'lamhaa-restaurant-nj',        name: 'Lamhaa Restaurant, New Jersey',     type: 'hospitality', overwrite: false },
+  // 'COMMERCIAL-LUXURY LOUNGE IN USA':            { slug: 'luxury-lounge-usa',           name: 'Luxury Lounge, USA',                type: 'hospitality', overwrite: false },
 
-  // ── New residential projects ──────────────────────────────────────────────
-  '3BHK-INDRAPRASTH GREEN A BLOCK':             { slug: 'indraprashtha-green-a',       name: 'Indraprashtha Greens, A Block',     type: 'residential', overwrite: false },
-  '3BHK-INDRAPRASTH GREENS F BLOCK':            { slug: 'indraprashtha-green-f',       name: 'Indraprashtha Greens, F Block',     type: 'residential', overwrite: false },
-  '3BHK-MAPLE TREE F BLOCK':                    { slug: 'maple-tree-f-block',          name: 'Maple Tree, F Block',               type: 'residential', overwrite: false },
-  '3BHK-PANCHAM PENTAGON':                      { slug: 'pancham-pentagon',            name: 'Pancham Pentagon',                  type: 'residential', overwrite: false },
-  '3BHK-RATNAKAAR PRISTINE':                    { slug: 'ratnakaar-pristine',          name: 'Ratnakaar Pristine',                type: 'residential', overwrite: false },
-  '4BHK + HOMETHEATRE-VALENCIA RAJKOT':         { slug: 'valencia-rajkot',             name: 'Valencia Rajkot',                   type: 'residential', overwrite: false },
-  '4BHK-GIRIRAJ AMBAVADI':                      { slug: 'giriraj-ambavadi',            name: 'Giriraj Ambavadi',                  type: 'residential', overwrite: false },
-  '4BHK-POPLAR DOMAIN':                         { slug: 'poplar-domain',               name: 'Poplar Domain',                     type: 'residential', overwrite: false },
-  '4BHK-SHILP SHALIGRAM':                       { slug: 'shilp-shaligram',             name: 'Shilp Shaligram',                   type: 'residential', overwrite: false },
-
-  // ── New commercial / hospitality projects ────────────────────────────────
-  'COMMERCIAL-BEFIT PHYSIOTHERAPY CLINIC':      { slug: 'befit-physiotherapy',         name: 'Befit Physiotherapy Clinic',        type: 'commercial',  overwrite: false },
-  'COMMERCIAL-IMPORT & EXPORT OFFICE SHIVALIK': { slug: 'import-export-shivalik',      name: 'Import & Export Office, Shivalik',  type: 'commercial',  overwrite: false },
-  'COMMERCIAL-IT OFFICE STRATUM FOCUS':         { slug: 'stratum-focus-it-office',     name: 'IT Office – Stratum Focus',         type: 'commercial',  overwrite: false },
-  'COMMERCIAL-LAMHAA RESTAURANT NJ,USA':        { slug: 'lamhaa-restaurant-nj',        name: 'Lamhaa Restaurant, New Jersey',     type: 'hospitality', overwrite: false },
-  'COMMERCIAL-LUXURY LOUNGE IN USA':            { slug: 'luxury-lounge-usa',           name: 'Luxury Lounge, USA',                type: 'hospitality', overwrite: false },
+  // ── New projects (batch 2) ────────────────────────────────────────────────
+  '3BHK-ARISTO BLAZE':                          { slug: 'aristo-blaze',                name: '3BHK-ARISTO BLAZE',                 type: 'residential', overwrite: false },
+  '3BHK-ELITE MARS A BLOCK':                    { slug: 'elite-mars-a-block',          name: '3BHK-ELITE MARS A BLOCK',           type: 'residential', overwrite: false },
+  '3BHK-GREENZ TURQUIOSE SHELA':                { slug: 'greenz-turquoise-shela',      name: '3BHK-GREENZ TURQUIOSE SHELA',       type: 'residential', overwrite: false },
+  '3BHK-SHEETAL WEST PARK VASTRAPUR':           { slug: 'sheetal-west-park',           name: '3BHK-SHEETAL WEST PARK VASTRAPUR',  type: 'residential', overwrite: false },
+  '4BHK-THE BUNGLOWS WEST':                     { slug: 'the-bunglows-west-4bhk',      name: '4BHK-THE BUNGLOWS WEST',            type: 'residential', overwrite: false },
+  '4BHK-VENICE BUNGLOWS':                       { slug: 'venice-bungalows-4bhk',       name: '4BHK-VENICE BUNGLOWS',              type: 'residential', overwrite: false },
+  '4BHK-VILLA YATKRUPA SOC ANAND':              { slug: 'villa-yatkrupa-anand',        name: '4BHK-VILLA YATKRUPA SOC ANAND',     type: 'residential', overwrite: false },
+  '5BHK- THE BUNGLOWS WEST SAMPLE':             { slug: 'the-bunglows-west-5bhk',      name: '5BHK- THE BUNGLOWS WEST SAMPLE',    type: 'residential', overwrite: false },
+  'COMMERCIAL-SATYAM IMPEX TILES SHOWROOM CTM': { slug: 'satyam-impex-tiles',          name: 'COMMERCIAL-SATYAM IMPEX TILES SHOWROOM CTM', type: 'commercial', overwrite: false },
 };
 
 const IMAGE_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.webp'];
@@ -116,7 +122,10 @@ async function main() {
   console.log('🚀 Starting Cloudinary upload...');
   console.log(`   Photos root: ${PHOTOS_ROOT}\n`);
 
-  const result = {};
+  // Patch existing JSON — preserves already-uploaded projects
+  const result = fs.existsSync(OUTPUT_FILE)
+    ? JSON.parse(fs.readFileSync(OUTPUT_FILE, 'utf8'))
+    : {};
 
   for (const [folderName, projectInfo] of Object.entries(PROJECT_FOLDERS)) {
     const urls = await uploadProject(folderName, projectInfo);
