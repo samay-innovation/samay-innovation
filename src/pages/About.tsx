@@ -51,7 +51,7 @@ export default function About() {
       {/* ── 1. HERO — full-bleed project image ── */}
       <section className="relative h-[85vh] min-h-[560px] overflow-hidden bg-[#0b1012]">
         <motion.img
-          src={showcaseProjects[0]?.images[0]}
+          src="/assets/hero/hero3.png"
           alt="Samay Innovation — Featured Project"
           initial={{ scale: 1.08, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
