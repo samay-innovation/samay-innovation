@@ -44,10 +44,10 @@ export const AWARDS = [
   },
   {
     id: '2',
-    title: 'Most Promising Interior Designer In Asia and UK',
+    title: 'Elite Luxury Interior Designer of the Year',
     year: '2022',
-    location: 'House Of Commons, London UK',
-    description: 'Honoured by Navendu Mishra, Member of Parliament of the United Kingdom, for the \'Most Promising Interior Designer In Asia And UK\' at the House Of Commons, London UK, May 2022.',
+    location: 'Capitol Hill, Washington DC, USA',
+    description: 'Humbled to receive the Elite Luxury Interior Designer of the Year award from Barry Strachan Gardiner, a Member of Parliament in the United Kingdom, at Capitol Hill, Washington DC, USA — proud, humbled, and inspired to keep creating timeless beauty.',
     image: '/assets/images/awards/award-uk-2022.jpg',
   },
   {

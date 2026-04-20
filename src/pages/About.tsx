@@ -128,30 +128,43 @@ export default function About() {
               className="text-4xl md:text-5xl font-light text-[#0b1012] leading-tight mb-10"
               style={{ fontFamily: 'Georgia, serif' }}
             >
-              Seme Nadvi —<br />A Decade of Design.
+              Seme Nadvi —<br />A Decade of Luxury Design.
             </h2>
             <p className="text-base text-[#0b1012]/70 leading-relaxed mb-5">
-              I am Seme Nadvi, founder and principal designer at Samay Innovation — an award-winning
-              interior design studio and experience centre based in Ahmedabad, Gujarat, established in
-              2015. Over the past decade, I have built the studio on a single belief: that truly
-              exceptional interiors are born from listening, not just drawing.
+              I am Seme Nadvi, Founder and Principal Designer of Samay Innovation — an award-winning
+              luxury interior design studio and experience centre established in 2015. We specialise
+              in creating refined, high-end residences, bespoke commercial environments, and turnkey
+              interiors for discerning clients who value elegance, comfort, and individuality.
             </p>
             <p className="text-base text-[#0b1012]/70 leading-relaxed mb-5">
-              Our work spans continents — with completed projects in Alicante (Spain), Adelaide
-              (Australia), Amman (Jordan), Cologne (Germany), and Mexico City, alongside turnkey
-              residential and commercial projects across the United States and India. Every space,
-              regardless of geography, carries the same intention: refined, purposeful, and
-              unmistakably personal.
+              Our international portfolio includes completed projects across the United States of
+              America, alongside residences and commercial spaces in Alicante, Adelaide, Amman,
+              Cologne, and Mexico City. For our U.S.-based clients, we offer a seamless design
+              experience that combines global sophistication with practical execution — delivering
+              interiors that feel timeless, elevated, and deeply personal.
             </p>
             <p className="text-base text-[#0b1012]/70 leading-relaxed mb-5">
-              The studio's work has been featured in Forbes, Vogue India, De-Mode (an Indo-Italian
-              design magazine), Outlook Business, and Zee UK, among others. I have also had the
-              privilege of serving on a panel for Women's Day on Zee News Channel, speaking on
-              design, entrepreneurship, and creative leadership.
+              We work extensively with clients across the United States of America, delivering
+              bespoke interiors for luxury residences, premium apartments, vacation homes, offices,
+              clinics, restaurants, and high-end commercial spaces. Our approach is designed for
+              international clients who seek a seamless, stress-free process with world-class design
+              standards and exceptional attention to detail.
+            </p>
+            <p className="text-base text-[#0b1012]/70 leading-relaxed mb-5">
+              At Samay Innovation, we believe luxury is not excess — it is thoughtful detail,
+              intelligent planning, premium finishes, and spaces designed around the way you live.
+              Whether it is a private residence, vacation home, investment property, office, clinic,
+              or retail environment, every project is tailored to reflect status, lifestyle, and
+              long-term value.
+            </p>
+            <p className="text-base text-[#0b1012]/70 leading-relaxed mb-5">
+              Our work has been featured in Forbes, Vogue India, De-Mode, Outlook Business, and
+              Zee UK, reflecting our commitment to excellence and design leadership.
             </p>
             <p className="text-base text-[#0b1012]/70 leading-relaxed mb-12">
-              You can explore more of my work on Instagram — and as I always say, a warm referral
-              goes a long way.
+              If you are based in the USA and seeking a luxury interior partner for your home or
+              commercial space, I invite you to connect. Explore our work on Instagram — and as I
+              always say, a warm referral goes a long way.
             </p>
             <div className="flex flex-wrap gap-6">
               <Link
@@ -178,10 +191,10 @@ export default function About() {
           >
             <div className="aspect-[3/4] overflow-hidden">
               <img
-                src="/assets/images/founder/founder-photo.png"
+                src="/assets/images/founder/founder-photo-2.png"
                 alt="Seme Nadvi — Founder, Samay Innovation"
                 className="w-full h-full object-cover object-center"
-                onError={(e) => { e.currentTarget.src = '/assets/images/founder/founder-photo.png'; }}
+                onError={(e) => { e.currentTarget.src = '/assets/images/founder/founder-photo-2.png'; }}
               />
             </div>
           </motion.div>
