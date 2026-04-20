@@ -30,17 +30,17 @@ export const STATS = {
   projectsCompleted: '200+',
   happyClients: '150+',
   yearsExperience: '10+',
-  awards: '2',
+  awards: '3',
 };
 
 export const AWARDS = [
   {
     id: '1',
-    title: 'Elite Luxury Interior Designer',
+    title: 'Global Achievers Summit & Awards 2025',
     year: '2025',
-    location: 'Capitol Hill, Washington DC, USA',
-    description: 'Recognised as the Elite Luxury Interior Designer at Capitol Hill, Washington DC, USA in October 2025 — a testament to the firm\'s growing international presence and commitment to design excellence on a global stage.',
-    image: '',
+    location: 'The Library of Congress, Capitol Hill, Washington DC, USA',
+    description: 'Honoured at the Global Achievers Summit & Awards 2025 on October 29, 2025 at The Library of Congress, Capitol Hill, Washington DC, USA — recognising Samay Innovation\'s design excellence and growing global footprint.',
+    image: '/assets/images/awards/award-dc-2025.jpg',
   },
   {
     id: '2',

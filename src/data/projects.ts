@@ -31,7 +31,7 @@ export const projects: Project[] = [
     year: 2024,
     size: '4,200 sq ft',
     status: 'completed',
-    featured: true,
+    featured: false,
     thumbnail: 'https://res.cloudinary.com/dpv8br6pe/image/upload/v1776594070/samay/arvind-villa-khatraj/nm-08519.jpg',
     images: [
       'https://res.cloudinary.com/dpv8br6pe/image/upload/v1776594070/samay/arvind-villa-khatraj/nm-08519.jpg',
@@ -92,7 +92,7 @@ export const projects: Project[] = [
     year: 2024,
     size: '3,800 sq ft',
     status: 'completed',
-    featured: false,
+    featured: true,
     thumbnail: 'https://res.cloudinary.com/dpv8br6pe/image/upload/v1776594233/samay/parijaat-eclat-4bhk/nm-00007.jpg',
     images: [
       'https://res.cloudinary.com/dpv8br6pe/image/upload/v1776594233/samay/parijaat-eclat-4bhk/nm-00007.jpg',

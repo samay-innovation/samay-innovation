@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Award } from 'lucide-react';
 import { AWARDS, FEATURED_IN } from '../lib/constants';
-import { projects } from '../data/projects';
 import SEO from '../components/seo/SEO';
 import { localBusinessSchema } from '../components/seo/schemas';
 
@@ -13,8 +12,6 @@ const fadeUp = {
   transition: { duration: 0.7 },
 };
 
-// Pull 4 featured projects for the gallery
-const showcaseProjects = projects.filter((p) => p.featured && p.region !== 'international').slice(0, 4);
 
 const PHILOSOPHY = [
   {
@@ -226,40 +223,87 @@ export default function About() {
       </section>
 
       {/* ── 6. AWARDS ── */}
-      <section className="py-20 md:py-28" style={{ backgroundColor: '#fafaf8' }}>
+      <section className="py-20 md:py-28 bg-[#fafaf8]">
         <div className="container-custom">
-        <motion.div {...fadeUp} className="mb-16">
-          <p className="font-mono tracking-[0.4em] uppercase text-[10px] text-[#0b1012]/40 mb-6">Recognition</p>
-          <h2 className="text-4xl md:text-5xl font-light text-[#0b1012]" style={{ fontFamily: 'Georgia, serif' }}>
-            Awards & Achievements
-          </h2>
+
+        <motion.div {...fadeUp} className="mb-14 flex flex-col md:flex-row md:items-end md:justify-between gap-4 border-b border-[#ddd8d0] pb-10">
+          <div>
+            <p className="font-mono tracking-[0.4em] uppercase text-[10px] text-[#0b1012]/40 mb-4">Recognition</p>
+            <h2 className="text-4xl md:text-5xl font-light text-[#0b1012]" style={{ fontFamily: 'Georgia, serif' }}>
+              Awards & Achievements
+            </h2>
+          </div>
+          <p className="text-sm font-light text-[#0b1012]/45 max-w-xs leading-relaxed">
+            Internationally recognised across three continents for design excellence.
+          </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+        <div className="divide-y divide-[#ddd8d0]">
           {AWARDS.map((award, i) => (
             <motion.div
               key={award.id}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: i * 0.12 }}
-              className={`pt-10 pb-12 border-t border-[#ddd8d0] ${i === 0 ? 'md:pr-12' : 'md:pl-12 md:border-l'}`}
+              transition={{ duration: 0.65, delay: i * 0.1 }}
+              className="group py-10 md:py-12 flex flex-col md:flex-row md:items-center gap-8 md:gap-14 hover:bg-[#f4f1ec] transition-colors duration-500 -mx-4 px-4 md:-mx-8 md:px-8 rounded-sm"
             >
-              {award.image && (
-                <div className="aspect-[4/3] overflow-hidden mb-8">
-                  <img src={award.image} alt={award.title} className="w-full h-full object-cover object-center" />
-                </div>
-              )}
-              <p className="text-6xl md:text-7xl font-light mb-6 leading-none" style={{ fontFamily: 'Georgia, serif', color: '#b8975a' }}>
-                {award.year}
-              </p>
-              <p className="font-mono tracking-[0.4em] uppercase text-[10px] text-[#0b1012]/40 mb-3 flex items-center gap-2">
-                <Award size={10} className="shrink-0" />{award.location}
-              </p>
-              <h3 className="text-xl md:text-2xl font-light text-[#0b1012] leading-snug mb-5" style={{ fontFamily: 'Georgia, serif' }}>
-                {award.title}
-              </h3>
-              <p className="text-sm text-[#0b1012]/60 leading-relaxed">{award.description}</p>
+              {/* Index + Year */}
+              <div className="flex-shrink-0 w-24 hidden md:block">
+                <p className="font-mono text-[9px] tracking-[0.35em] text-[#0b1012]/20 mb-2">
+                  {String(i + 1).padStart(2, '0')}
+                </p>
+                <p
+                  className="text-5xl font-light leading-none group-hover:scale-105 transition-transform duration-500 origin-left"
+                  style={{ fontFamily: 'Georgia, serif', color: '#b8975a' }}
+                >
+                  {award.year}
+                </p>
+              </div>
+
+              {/* Divider */}
+              <div className="hidden md:block w-px self-stretch bg-[#ddd8d0] group-hover:bg-accent-primary transition-colors duration-500 flex-shrink-0" />
+
+              {/* Text */}
+              <div className="flex-1 min-w-0">
+                <p
+                  className="md:hidden text-4xl font-light leading-none mb-4"
+                  style={{ fontFamily: 'Georgia, serif', color: '#b8975a' }}
+                >
+                  {award.year}
+                </p>
+                <p className="font-mono text-[9px] tracking-[0.4em] uppercase text-[#0b1012]/35 mb-3 flex items-center gap-2">
+                  <Award size={9} className="shrink-0 text-accent-primary" />
+                  {award.location}
+                </p>
+                <h3
+                  className="text-xl md:text-2xl font-light text-[#0b1012] leading-snug mb-4 group-hover:text-accent-primary transition-colors duration-400"
+                  style={{ fontFamily: 'Georgia, serif' }}
+                >
+                  {award.title}
+                </h3>
+                <p className="text-sm text-[#0b1012]/55 leading-relaxed max-w-xl">
+                  {award.description}
+                </p>
+              </div>
+
+              {/* Photo */}
+              <div className="flex-shrink-0 w-full md:w-60 lg:w-72">
+                {award.image ? (
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img
+                      src={award.image}
+                      alt={award.title}
+                      className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04] ${i === 0 ? 'object-top' : 'object-center'}`}
+                    />
+                  </div>
+                ) : (
+                  <div className="aspect-[4/3] bg-[#ede9e3] border border-[#ddd8d0] flex flex-col items-center justify-center gap-3">
+                    <Award size={28} className="text-accent-primary/40" />
+                    <p className="font-mono text-[9px] tracking-[0.3em] uppercase text-[#0b1012]/25">Photo Coming Soon</p>
+                  </div>
+                )}
+              </div>
             </motion.div>
           ))}
         </div>
@@ -267,7 +311,7 @@ export default function About() {
         {/* CTA */}
         <motion.div
           {...fadeUp}
-          className="mt-20 pt-12 border-t border-[#ddd8d0] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
+          className="mt-16 pt-12 border-t border-[#ddd8d0] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
         >
           <p className="text-2xl md:text-3xl font-light text-[#0b1012]" style={{ fontFamily: 'Georgia, serif' }}>
             Ready to transform your space?
@@ -276,7 +320,7 @@ export default function About() {
             <Link to="/contact" className="inline-flex items-center gap-2 text-sm text-[#0b1012] hover:gap-3 transition-all duration-200">
               Get in touch <ArrowRight size={14} />
             </Link>
-            <Link to="/portfolio" className="inline-flex items-center gap-2 text-sm text-[#0b1012]/50 hover:text-[#0b1012] hover:gap-3 transition-all duration-200">
+            <Link to="/portfolio" className="inline-flex items-center gap-2 text-sm text-[#0b1012]/40 hover:text-[#0b1012] hover:gap-3 transition-all duration-200">
               View portfolio <ArrowRight size={14} />
             </Link>
           </div>
