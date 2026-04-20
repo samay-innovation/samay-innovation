@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
 const SLIDES = [
-  { src: '/assets/hero/hero-living-room.png',  category: 'Residential',   label: 'Living Space'   },
-  { src: '/assets/hero/hero-bar-area.png',     category: 'Hospitality',   label: 'Bar & Lounge'   },
-  { src: '/assets/hero/hero-restaurant.png',   category: 'Commercial',    label: 'Restaurant'     },
-  { src: '/assets/hero/hero-us-restaurant.jpg',category: 'International', label: 'USA Restaurant' },
-  { src: '/assets/hero/hero-us.png',           category: 'International', label: 'USA Project'    },
-  { src: '/assets/hero/hero-3a.png',           category: 'Residential',   label: 'Villa Interior' },
+  { src: '/assets/hero/hero1.png', category: 'Residential',   label: 'Living Space'   },
+  { src: '/assets/hero/hero2.png', category: 'Hospitality',   label: 'Bar & Lounge'   },
+  { src: '/assets/hero/hero3.png', category: 'Commercial',    label: 'Restaurant'     },
+  { src: '/assets/hero/hero4.png', category: 'International', label: 'USA Restaurant' },
+  { src: '/assets/hero/hero5.png', category: 'International', label: 'USA Project'    },
+  { src: '/assets/hero/hero6.png', category: 'Residential',   label: 'Villa Interior' },
 ];
 
 const INTERVAL = 5000;
