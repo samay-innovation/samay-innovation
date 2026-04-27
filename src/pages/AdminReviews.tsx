@@ -80,7 +80,7 @@ export default function AdminReviews() {
           className="bg-white rounded-2xl border border-[#ede8e0] shadow-sm w-full max-w-sm p-10 text-center"
         >
           {/* Logo */}
-          <img src="/logo/logo.png" alt="Samay Innovation" className="w-10 h-10 object-contain mx-auto mb-6" />
+          <img src="/logo/logo.svg" alt="Samay Innovation" className="w-10 h-10 object-contain mx-auto mb-6 brightness-0" />
 
           <div className="flex items-center justify-center gap-3 mb-6">
             <div className="h-px w-6 bg-[#C9A97A]" />
@@ -135,7 +135,7 @@ export default function AdminReviews() {
       <div className="bg-white border-b border-[#ede8e0] px-6 py-4">
         <div className="max-w-4xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/logo/logo.png" alt="Samay Innovation" className="w-8 h-8 object-contain" />
+            <img src="/logo/logo.svg" alt="Samay Innovation" className="w-8 h-8 object-contain brightness-0" />
             <div>
               <p className="text-sm font-light text-[#1a1a1a] tracking-wide">SAMAY INNOVATION</p>
               <p className="text-[10px] text-[#aaa] tracking-widest uppercase">Review Dashboard</p>

@@ -50,11 +50,7 @@ export default function Header() {
                 alt={SITE_CONFIG.name}
                 className="h-8 w-auto transition-all duration-500"
                 style={{
-                  filter: isScrolled
-                    ? 'brightness(0)'
-                    : darkHero
-                    ? 'brightness(0) invert(1)'
-                    : 'brightness(0)',
+                  filter: (!isScrolled && darkHero) ? 'none' : 'brightness(0)',
                 }}
                 onError={(e) => { e.currentTarget.src = '/logo/logo.png'; }}
               />

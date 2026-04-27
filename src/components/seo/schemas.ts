@@ -26,6 +26,7 @@ export const localBusinessSchema = {
   address: {
     '@type': 'PostalAddress',
     streetAddress: '403 Before, Lane of ICICI Bank, PV Enclave, Sindhu Bhavan Marg, opp. Satyam House, Bodakdev',
+
     addressLocality: 'Ahmedabad',
     addressRegion: 'Gujarat',
     postalCode: '380059',
@@ -33,8 +34,15 @@ export const localBusinessSchema = {
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: 23.0419,
-    longitude: 72.5097,
+    latitude: 23.04190,
+    longitude: 72.50970,
+  },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5',
+    reviewCount: '13',
+    bestRating: '5',
+    worstRating: '1',
   },
   openingHoursSpecification: [
     {

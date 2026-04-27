@@ -32,7 +32,7 @@ export default function Preloader() {
               <img
                 src="/logo/logo.svg"
                 alt="Samay Innovation"
-                className="h-20 w-auto mx-auto mb-4 brightness-0 saturate-100% dark:brightness-0 dark:invert"
+                className="h-20 w-auto mx-auto mb-4 brightness-0"
                 onError={(e) => {
                   e.currentTarget.src = '/logo/logo.png';
                 }}

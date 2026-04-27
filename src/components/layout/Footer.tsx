@@ -19,12 +19,17 @@ export default function Footer() {
 
           {/* Brand column */}
           <div className="lg:col-span-1">
-            <img
-              src="/logo/logo.svg"
-              alt={SITE_CONFIG.name}
-              className="h-10 w-auto mb-8"
-              onError={(e) => { e.currentTarget.src = '/logo/logo.png'; }}
-            />
+            <div className="flex items-center gap-3 mb-8">
+              <img
+                src="/logo/logo.svg"
+                alt={SITE_CONFIG.name}
+                className="h-10 w-auto"
+                onError={(e) => { e.currentTarget.src = '/logo/logo.png'; }}
+              />
+              <span className="text-sm font-light tracking-[0.18em] uppercase text-white">
+                Samay Innovation
+              </span>
+            </div>
             <p
               className="text-sm font-light text-white/45 leading-relaxed mb-10 max-w-xs"
               style={{ fontFamily: 'Georgia, serif' }}
@@ -91,7 +96,8 @@ export default function Footer() {
                   <p className="text-sm font-light text-white/45 leading-relaxed group-hover:text-white/70 transition-colors duration-300">
                     403 Before, Lane of ICICI Bank<br />
                     PV Enclave, Sindhu Bhavan Marg<br />
-                    Bodakdev, Ahmedabad 380059
+                    opp. Satyam House, Bodakdev<br />
+                    Ahmedabad, Gujarat 380059
                   </p>
                 </div>
               </a>

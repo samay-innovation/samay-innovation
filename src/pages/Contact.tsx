@@ -37,7 +37,6 @@ function floatLabel(focused: boolean, hasValue: boolean) {
 
 // ─── contact info rows ────────────────────────────────────────────────────────
 const ADDRESS_LINES = [
-  'No 104/A, 1st Floor',
   '403 Before, Lane of ICICI Bank',
   'PV Enclave, Sindhu Bhavan Marg',
   'opp. Satyam House, Bodakdev',
@@ -142,7 +141,7 @@ export default function Contact() {
       <SEO
         title="Contact Samay Innovation — Interior Designer in Ahmedabad, Gujarat"
         description="Get in touch with Samay Innovation to start your interior design project. Visit our studio at Bodakdev, Ahmedabad or call (+91) 989 852 4366. Serving residential and commercial clients across Ahmedabad, Gujarat and the US."
-        keywords="contact best interior designer India, hire interior designer India, book interior designer India, interior design consultation India, top interior design firm India, best interior design studio India, interior designer contact India, luxury interior design India, interior design firm Ahmedabad, book interior designer Ahmedabad, interior design consultation Gujarat, Samay Innovation contact"
+        keywords="contact best interior designer India, hire interior designer India, book interior designer India, interior design consultation India, top interior design firm India, best interior design studio India, interior designer contact India, luxury interior design India, interior design firm Ahmedabad, book interior designer Ahmedabad, interior design consultation Gujarat, Samay Innovation contact, contact Indian interior designer USA, hire Indian interior designer for US project, book interior design consultation online USA, Indian interior design firm for US clients, Samay Innovation USA contact, remote interior design consultation for American clients"
         path="/contact"
         structuredData={localBusinessSchema}
       />
