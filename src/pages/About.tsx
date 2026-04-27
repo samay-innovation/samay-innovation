@@ -78,42 +78,74 @@ export default function About() {
           </motion.h1>
         </div>
 
-        {/* Stats — top right */}
+        {/* Stats */}
         <motion.div
           initial={{ opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
-          className="absolute top-24 md:top-28 right-6 sm:right-8 md:right-10 lg:right-16 xl:right-20 flex items-center gap-8 md:gap-12 z-10"
+          className="absolute top-24 md:top-28 left-0 right-0 px-6 sm:px-8 md:px-0 md:left-auto md:right-10 lg:right-16 xl:right-20 z-10"
         >
-          {[
-            { value: '200+', label: 'Projects' },
-            { value: '10+',  label: 'Years'    },
-            { value: '3',    label: 'Awards'   },
-          ].map((s, i) => (
-            <div key={s.label} className={`text-right ${i > 0 ? 'pl-8 border-l border-white/15' : ''}`}>
-              <p className="text-2xl md:text-3xl font-light text-white leading-none" style={{ fontFamily: 'Georgia, serif' }}>
-                {s.value}
-              </p>
-              <p className="font-mono text-[9px] tracking-widest uppercase text-white/35 mt-1">{s.label}</p>
-            </div>
-          ))}
+          {/* Mobile: centered row */}
+          <div className="flex md:hidden items-center justify-center gap-0 divide-x divide-white/15 backdrop-blur-sm bg-black/20 rounded-xl px-2 py-3 w-fit mx-auto">
+            {[
+              { value: '200+', label: 'Projects' },
+              { value: '10+',  label: 'Years'    },
+              { value: '3',    label: 'Awards'   },
+            ].map((s) => (
+              <div key={s.label} className="text-center px-5">
+                <p className="text-2xl font-light text-white leading-none" style={{ fontFamily: 'Georgia, serif' }}>
+                  {s.value}
+                </p>
+                <p className="font-mono text-[9px] tracking-widest uppercase text-white/50 mt-1.5">{s.label}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop: right-aligned row */}
+          <div className="hidden md:flex items-center gap-12">
+            {[
+              { value: '200+', label: 'Projects' },
+              { value: '10+',  label: 'Years'    },
+              { value: '3',    label: 'Awards'   },
+            ].map((s, i) => (
+              <div key={s.label} className={`text-right ${i > 0 ? 'pl-12 border-l border-white/15' : ''}`}>
+                <p className="text-3xl font-light text-white leading-none" style={{ fontFamily: 'Georgia, serif' }}>
+                  {s.value}
+                </p>
+                <p className="font-mono text-[9px] tracking-widest uppercase text-white/35 mt-1">{s.label}</p>
+              </div>
+            ))}
+          </div>
         </motion.div>
       </section>
 
       {/* ── 2. FEATURED IN ── */}
-      <section className="py-8 border-b border-[#ddd8d0]" style={{ backgroundColor: '#fafaf8' }}>
+      <section className="py-10 border-b border-[#ddd8d0]" style={{ backgroundColor: '#fafaf8' }}>
         <div className="container-custom">
-        <motion.div {...fadeUp} className="flex flex-wrap items-center gap-x-8 md:gap-x-14 gap-y-3">
-          <p className="font-mono tracking-[0.4em] uppercase text-[10px] text-[#0b1012]/40 shrink-0">Featured In</p>
-          {FEATURED_IN.map((pub, i) => (
-            <span key={pub} className="flex items-center gap-8 md:gap-14">
-              <span className="text-2xl md:text-3xl font-light text-[#0b1012]/70" style={{ fontFamily: 'Georgia, serif' }}>
-                {pub}
-              </span>
-              {i < FEATURED_IN.length - 1 && <span className="text-[#ddd8d0] text-2xl select-none">·</span>}
-            </span>
-          ))}
-        </motion.div>
+          <motion.div {...fadeUp}>
+            <p className="font-mono tracking-[0.4em] uppercase text-[10px] text-[#0b1012]/40 mb-5">Featured In</p>
+
+            {/* Mobile: 2-column grid */}
+            <div className="grid grid-cols-2 gap-x-6 gap-y-4 sm:hidden">
+              {FEATURED_IN.map((pub) => (
+                <span key={pub} className="text-xl font-light text-[#0b1012]/70" style={{ fontFamily: 'Georgia, serif' }}>
+                  {pub}
+                </span>
+              ))}
+            </div>
+
+            {/* Desktop: single row with dot separators */}
+            <div className="hidden sm:flex flex-wrap items-center gap-x-10 md:gap-x-14 gap-y-3">
+              {FEATURED_IN.map((pub, i) => (
+                <span key={pub} className="flex items-center gap-10 md:gap-14">
+                  <span className="text-2xl md:text-3xl font-light text-[#0b1012]/70" style={{ fontFamily: 'Georgia, serif' }}>
+                    {pub}
+                  </span>
+                  {i < FEATURED_IN.length - 1 && <span className="text-[#ddd8d0] text-2xl select-none">·</span>}
+                </span>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </section>
 
