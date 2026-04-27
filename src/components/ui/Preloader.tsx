@@ -19,7 +19,7 @@ export default function Preloader() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.6, ease: 'easeInOut' }}
-          className="fixed inset-0 z-[100] bg-white dark:bg-dark-bg-primary flex items-center justify-center"
+          className="fixed inset-0 z-[100] bg-[#0b1012] flex items-center justify-center"
         >
           <div className="text-center">
             {/* Logo */}
@@ -32,18 +32,18 @@ export default function Preloader() {
               <img
                 src="/logo/logo.svg"
                 alt="Samay Innovation"
-                className="h-20 w-auto mx-auto mb-4 brightness-0"
+                className="h-20 w-auto mx-auto mb-4"
                 onError={(e) => {
                   e.currentTarget.src = '/logo/logo.png';
                 }}
               />
-              <h1 className="text-2xl font-light tracking-[0.2em] uppercase text-[#0b1012]">
+              <h1 className="text-2xl font-light tracking-[0.2em] uppercase text-[#ebd68c]">
                 SAMAY INNOVATION
               </h1>
             </motion.div>
 
             {/* Loading Bar */}
-            <div className="w-48 h-0.5 bg-border-light dark:bg-border-dark mx-auto overflow-hidden">
+            <div className="w-48 h-0.5 bg-white/10 mx-auto overflow-hidden">
               <motion.div
                 initial={{ x: '-100%' }}
                 animate={{ x: '100%' }}
@@ -57,7 +57,7 @@ export default function Preloader() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="mt-6 text-xs font-light tracking-[0.3em] uppercase text-text-tertiary dark:text-dark-text-tertiary"
+              className="mt-6 text-xs font-light tracking-[0.3em] uppercase text-white/30"
             >
               Loading...
             </motion.p>
