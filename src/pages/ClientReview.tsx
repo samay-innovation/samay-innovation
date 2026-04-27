@@ -43,7 +43,7 @@ export default function ClientReview() {
         <div className="flex items-center gap-3">
           <img src="/logo/logo.svg" alt="Samay Innovation" className="w-8 h-8 object-contain brightness-0" />
           <div>
-            <p className="text-sm font-light text-[#1a1a1a] tracking-wide">SAMAY INNOVATION</p>
+            <p className="text-sm font-light text-[#0b1012] tracking-wide">SAMAY INNOVATION</p>
             <p className="text-[10px] text-[#999] tracking-widest uppercase">Client Feedback</p>
           </div>
         </div>

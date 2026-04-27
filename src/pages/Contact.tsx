@@ -579,7 +579,7 @@ export default function Contact() {
               <div className="bg-[#0f1618] p-8 md:p-10 flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-white/8">
                 <div>
                   <p className="font-mono text-[10px] tracking-[0.4em] uppercase text-white/30 mb-6">Studio Address</p>
-                  <h3 className="text-lg font-light text-white mb-4" style={{ fontFamily: 'Georgia, serif' }}>
+                  <h3 className="text-lg font-light text-[#ebd68c] mb-4" style={{ fontFamily: 'Georgia, serif' }}>
                     Samay Innovation
                   </h3>
                   <div className="space-y-1 mb-8">

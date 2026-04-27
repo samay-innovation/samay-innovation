@@ -26,7 +26,7 @@ export default function Footer() {
                 className="h-10 w-auto"
                 onError={(e) => { e.currentTarget.src = '/logo/logo.png'; }}
               />
-              <span className="text-sm font-light tracking-[0.18em] uppercase text-white">
+              <span className="text-sm font-light tracking-[0.18em] uppercase text-[#ebd68c]">
                 Samay Innovation
               </span>
             </div>

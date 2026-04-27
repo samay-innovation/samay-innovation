@@ -54,11 +54,7 @@ export default function Header() {
                 }}
                 onError={(e) => { e.currentTarget.src = '/logo/logo.png'; }}
               />
-              <span
-                className={`text-sm font-light tracking-[0.18em] uppercase transition-colors duration-500 ${
-                  isScrolled ? 'text-[#0b1012]' : darkHero ? 'text-white' : 'text-[#0b1012]'
-                }`}
-              >
+              <span className={`text-sm font-light tracking-[0.18em] uppercase transition-colors duration-500 ${(!isScrolled && darkHero) ? 'text-[#ebd68c]' : 'text-[#0b1012]'}`}>
                 Samay Innovation
               </span>
             </Link>

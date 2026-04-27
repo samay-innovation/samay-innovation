@@ -37,7 +37,7 @@ export default function Preloader() {
                   e.currentTarget.src = '/logo/logo.png';
                 }}
               />
-              <h1 className="text-2xl font-light tracking-[0.2em] uppercase text-text-primary dark:text-dark-text-primary">
+              <h1 className="text-2xl font-light tracking-[0.2em] uppercase text-[#0b1012]">
                 SAMAY INNOVATION
               </h1>
             </motion.div>
