@@ -70,9 +70,9 @@ export default function ProjectDetails() {
         structuredData={[
           projectSchema(project),
           breadcrumbSchema([
-            { name: 'Home', url: 'https://samayinnovation.in/' },
-            { name: 'Portfolio', url: 'https://samayinnovation.in/portfolio' },
-            { name: project.title, url: `https://samayinnovation.in/portfolio/${project.slug}` },
+            { name: 'Home', url: 'https://samayinnovation.com/' },
+            { name: 'Portfolio', url: 'https://samayinnovation.com/portfolio' },
+            { name: project.title, url: `https://samayinnovation.com/portfolio/${project.slug}` },
           ]),
         ]}
       />

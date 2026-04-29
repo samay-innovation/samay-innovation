@@ -42,8 +42,8 @@ export default function Services() {
         structuredData={[
           servicesSchema,
           breadcrumbSchema([
-            { name: 'Home', url: 'https://samayinnovation.in/' },
-            { name: 'Services', url: 'https://samayinnovation.in/services' },
+            { name: 'Home', url: 'https://samayinnovation.com/' },
+            { name: 'Services', url: 'https://samayinnovation.com/services' },
           ]),
         ]}
       />

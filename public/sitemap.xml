@@ -4,42 +4,42 @@
 
   <!-- Core pages -->
   <url>
-    <loc>https://samayinnovation.in/</loc>
+    <loc>https://samayinnovation.com/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://samayinnovation.in/portfolio</loc>
+    <loc>https://samayinnovation.com/portfolio</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://samayinnovation.in/services</loc>
+    <loc>https://samayinnovation.com/services</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://samayinnovation.in/about</loc>
+    <loc>https://samayinnovation.com/about</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://samayinnovation.in/blogs</loc>
+    <loc>https://samayinnovation.com/blogs</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://samayinnovation.in/contact</loc>
+    <loc>https://samayinnovation.com/contact</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
@@ -47,7 +47,7 @@
 
   <!-- Portfolio: Arvind Villa No. 6, Khatraj -->
   <url>
-    <loc>https://samayinnovation.in/portfolio/arvind-villa-khatraj</loc>
+    <loc>https://samayinnovation.com/portfolio/arvind-villa-khatraj</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
@@ -59,7 +59,7 @@
 
   <!-- Portfolio: Venice Bungalows -->
   <url>
-    <loc>https://samayinnovation.in/portfolio/venice-bungalows</loc>
+    <loc>https://samayinnovation.com/portfolio/venice-bungalows</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
@@ -71,7 +71,7 @@
 
   <!-- Portfolio: Indraprashtha Residence -->
   <url>
-    <loc>https://samayinnovation.in/portfolio/indraprashtha</loc>
+    <loc>https://samayinnovation.com/portfolio/indraprashtha</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
@@ -83,7 +83,7 @@
 
   <!-- Portfolio: Parijaat Eclat 4BHK -->
   <url>
-    <loc>https://samayinnovation.in/portfolio/parijaat-eclat-4bhk</loc>
+    <loc>https://samayinnovation.com/portfolio/parijaat-eclat-4bhk</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
@@ -95,7 +95,7 @@
 
   <!-- Portfolio: Farmhouse at Rancharda -->
   <url>
-    <loc>https://samayinnovation.in/portfolio/farmhouse-rancharda</loc>
+    <loc>https://samayinnovation.com/portfolio/farmhouse-rancharda</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
@@ -107,7 +107,7 @@
 
   <!-- Portfolio: Ashutosh Kumar 3BHK -->
   <url>
-    <loc>https://samayinnovation.in/portfolio/ashutosh-kumar-3bhk</loc>
+    <loc>https://samayinnovation.com/portfolio/ashutosh-kumar-3bhk</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -115,7 +115,7 @@
 
   <!-- Portfolio: Event Office -->
   <url>
-    <loc>https://samayinnovation.in/portfolio/event-office</loc>
+    <loc>https://samayinnovation.com/portfolio/event-office</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>

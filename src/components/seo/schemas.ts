@@ -3,7 +3,7 @@
  * Schema.org vocabulary — validated at https://validator.schema.org
  */
 
-const SITE_URL = 'https://samayinnovation.in';
+const SITE_URL = 'https://samayinnovation.com';
 
 // ─── LocalBusiness / InteriorDesigner ───────────────────────────────────────
 
@@ -19,7 +19,7 @@ export const localBusinessSchema = {
   logo: `${SITE_URL}/logo/logo.png`,
   image: 'https://res.cloudinary.com/diojzujpv/image/upload/w_1200,h_630,c_fill,g_auto/samay/arvind-villa-khatraj/nm-08573.jpg',
   telephone: '+919898524366',
-  email: 'info@samayinnovation.in',
+  email: 'info@samayinnovation.com',
   priceRange: '₹₹₹₹',
   currenciesAccepted: 'INR, USD',
   paymentAccepted: 'Cash, Credit Card, Bank Transfer',
@@ -66,7 +66,7 @@ export const localBusinessSchema = {
     'https://linkedin.com/company/samayinnovation',
     'https://pinterest.com/samayinnovation',
     'https://facebook.com/samayinnovation',
-    'https://samayinnovation.in',
+    'https://samayinnovation.com',
   ],
   award: [
     'Most Promising Interior Designer In Asia and UK — House of Commons, London 2022',

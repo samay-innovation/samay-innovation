@@ -45,8 +45,8 @@ export default function BlogDetails() {
           image: blog.image,
           datePublished: blog.date,
           author: { '@type': 'Person', name: blog.author },
-          publisher: { '@type': 'Organization', name: 'Samay Innovation', url: 'https://samayinnovation.in' },
-          url: `https://samayinnovation.in/blogs/${blog.slug}`,
+          publisher: { '@type': 'Organization', name: 'Samay Innovation', url: 'https://samayinnovation.com' },
+          url: `https://samayinnovation.com/blogs/${blog.slug}`,
           keywords: blog.tags.join(', '),
         }}
       />

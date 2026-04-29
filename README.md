@@ -1,6 +1,6 @@
 # Samay Innovation — Website Documentation
 
-**Live site:** https://samayinnovation.in
+**Live site:** https://samayinnovation.com
 
 Luxury interior design firm based in Ahmedabad, Gujarat. This repo is the full source code for the company website — portfolio showcase, blog, services, contact form, and client review system.
 
@@ -54,7 +54,7 @@ The site is deployed on **Vercel** and is connected to the GitHub `main` branch.
 
 - **Every push to `main` automatically deploys** — no manual steps needed.
 - Vercel handles SSL, CDN, and edge caching automatically.
-- The custom domain `samayinnovation.in` is pointed at Vercel via DNS (see below).
+- The custom domain `samayinnovation.com` is pointed at Vercel via DNS (see below).
 - Security headers and cache rules are configured in [`vercel.json`](./vercel.json).
 
 **To trigger a manual redeploy:** Push any commit to `main`, or go to the Vercel dashboard → Deployments → Redeploy.
@@ -65,7 +65,7 @@ The site is deployed on **Vercel** and is connected to the GitHub `main` branch.
 
 | Item | Detail |
 |------|--------|
-| Domain | `samayinnovation.in` |
+| Domain | `samayinnovation.com` |
 | Registrar | **BigRock** |
 | Login Email | `samayinnovation@gmail.com` |
 | Login Password | *(stored in password manager — do not commit to repo)* |
@@ -212,7 +212,7 @@ This is how a client submits a testimonial and it appears on the homepage.
 
 ```
 1. Share the review link with the client:
-   https://samayinnovation.in/client-review
+   https://samayinnovation.com/client-review
 
 2. Client fills the form:
    - Name (required)
@@ -237,7 +237,7 @@ This is how a client submits a testimonial and it appears on the homepage.
 
 ## 🔐 Admin Dashboard
 
-**URL:** https://samayinnovation.in/samay-admin
+**URL:** https://samayinnovation.com/samay-admin
 
 ### How to Log In
 
@@ -460,7 +460,7 @@ This runs TypeScript type checking (`tsc -b`) then Vite build. Output goes to `/
 
 | Resource | URL | Login |
 |----------|-----|-------|
-| Live Website | https://samayinnovation.in | — |
+| Live Website | https://samayinnovation.com | — |
 | Vercel Dashboard | https://vercel.com/dashboard | GitHub account |
 | Supabase Dashboard | https://supabase.com/dashboard | Project credentials |
 | EmailJS Dashboard | https://emailjs.com | Account credentials |
@@ -477,5 +477,5 @@ This runs TypeScript type checking (`tsc -b`) then Vite build. Output goes to `/
 
 **Samay Innovation** — Ahmedabad, Gujarat, India
 📞 (+91) 989 852 4366
-📧 info@samayinnovation.in
-🌐 https://samayinnovation.in
+📧 info@samayinnovation.com
+🌐 https://samayinnovation.com

@@ -40,8 +40,7 @@ export const blogs: Blog[] = [
       <h2>Timeline and Budget Expectations</h2>
       <p>A well-executed 4,000 sq ft villa in Ahmedabad typically takes 5–7 months from design sign-off to handover. Budget planning should account for civil work, flooring, false ceilings, electrical, joinery, furnishing, soft furnishings, and landscaping — all of which are managed under a single umbrella at Samay Innovation.</p>
     `,
-    image:
-      'https://res.cloudinary.com/diojzujpv/image/upload/w_1200,h_800,c_fill,g_auto/samay/arvind-villa-khatraj/nm-08573.jpg',
+    image: '/assets/hero/hero1.png',
     author: 'Seme Nadvi',
     date: '2025-03-10',
     category: 'Residential Design',
@@ -123,7 +122,7 @@ export const blogs: Blog[] = [
       <p>No responsible interior designer in Ahmedabad will give you a final cost without reviewing your floor plan and understanding your brief. The numbers above are ranges based on real projects. A personalised estimate from Samay Innovation starts with a no-obligation consultation.</p>
     `,
     image:
-      'https://res.cloudinary.com/diojzujpv/image/upload/w_1200,h_800,c_fill,g_auto/samay/indraprashtha/01.jpg',
+      'https://res.cloudinary.com/dpv8br6pe/image/upload/v1776595949/samay/giriraj-ambavadi/dsc04104.jpg',
     author: 'Samay Innovation Team',
     date: '2025-01-22',
     category: 'Design Guide',
@@ -161,10 +160,9 @@ export const blogs: Blog[] = [
       <p>Our award-winning portfolio, published recognition in Forbes India and Vogue Living, and a track record of delivering projects on time and within scope have made us a trusted partner for Indian diaspora clients in the United States, the UK, and Canada. We bring the same rigour to your home in India that you expect from professionals in your adopted country.</p>
 
       <h2>Starting Your Project</h2>
-      <p>A consultation call with Seme Nadvi takes 45 minutes and covers your vision, budget range, timeline, and the unique considerations of managing your project remotely. Reach us at info@samayinnovation.in or via our contact form.</p>
+      <p>A consultation call with Seme Nadvi takes 45 minutes and covers your vision, budget range, timeline, and the unique considerations of managing your project remotely. Reach us at info@samayinnovation.com or via our contact form.</p>
     `,
-    image:
-      'https://res.cloudinary.com/diojzujpv/image/upload/w_1200,h_800,c_fill,g_auto/samay/arvind-villa-khatraj/nm-08578.jpg',
+    image: '/assets/hero/hero4.png',
     author: 'Seme Nadvi',
     date: '2025-02-05',
     category: 'NRI & International',
@@ -214,8 +212,7 @@ export const blogs: Blog[] = [
       <h2>Why Samay Innovation Works Well for NRI Clients</h2>
       <p>Our documentation-first, communication-heavy process was designed with remote clients in mind. Every project has a single point of contact, milestone-linked payments, weekly video updates, and a detailed snag process before final handover. We have worked with clients in the US, UK, and UAE, and we understand that trust is built through transparency — not promises.</p>
     `,
-    image:
-      'https://res.cloudinary.com/diojzujpv/image/upload/w_1200,h_800,c_fill,g_auto/samay/farmhouse-rancharda/nm-08744.jpg',
+    image: '/assets/hero/hero5.png',
     author: 'Samay Innovation Team',
     date: '2025-01-08',
     category: 'NRI & International',

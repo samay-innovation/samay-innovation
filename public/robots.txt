@@ -1,5 +1,5 @@
 # robots.txt — Samay Innovation
-# https://samayinnovation.in
+# https://samayinnovation.com
 
 User-agent: *
 Allow: /
@@ -14,4 +14,4 @@ Disallow: /client-review
 Disallow: /samay-admin
 
 # Sitemap
-Sitemap: https://samayinnovation.in/sitemap.xml
+Sitemap: https://samayinnovation.com/sitemap.xml

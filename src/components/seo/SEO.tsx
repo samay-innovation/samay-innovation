@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 
-const SITE_URL = 'https://samayinnovation.in';
+const SITE_URL = 'https://samayinnovation.com';
 const DEFAULT_OG_IMAGE =
   'https://res.cloudinary.com/diojzujpv/image/upload/w_1200,h_630,c_fill,g_auto/samay/arvind-villa-khatraj/nm-08573.jpg';
 const SITE_NAME = 'Samay Innovation';

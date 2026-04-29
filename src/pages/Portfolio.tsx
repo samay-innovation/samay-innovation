@@ -37,8 +37,8 @@ export default function Portfolio() {
         keywords="best interior design portfolio India, luxury interior design projects India, top interior design firm India, best residential interior designer India, best commercial interior designer India, luxury home design India, villa interior design India, hotel interior design India, restaurant interior design India, apartment interior design India, interior design projects Ahmedabad, luxury interior design Gujarat, international interior design projects India"
         path="/portfolio"
         structuredData={breadcrumbSchema([
-          { name: 'Home', url: 'https://samayinnovation.in/' },
-          { name: 'Portfolio', url: 'https://samayinnovation.in/portfolio' },
+          { name: 'Home', url: 'https://samayinnovation.com/' },
+          { name: 'Portfolio', url: 'https://samayinnovation.com/portfolio' },
         ])}
       />
 

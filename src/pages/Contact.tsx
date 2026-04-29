@@ -83,7 +83,7 @@ export default function Contact() {
           budget:       formData.budget || 'Not specified',
           message:      formData.message,
           to_name:      'Seme Nadvi',
-          to_email:     'info@samayinnovation.in',
+          to_email:     'info@samayinnovation.com',
         },
         { publicKey: EMAILJS_PUBLIC_KEY },
       );
