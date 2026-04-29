@@ -27,7 +27,7 @@ export const NAVIGATION = [
 ];
 
 export const STATS = {
-  projectsCompleted: '200+',
+  projectsCompleted: '1000+',
   happyClients: '150+',
   yearsExperience: '10+',
   awards: '3',
