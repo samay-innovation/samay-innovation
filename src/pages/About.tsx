@@ -88,7 +88,7 @@ export default function About() {
           {/* Mobile: centered row */}
           <div className="flex md:hidden items-center justify-center gap-0 divide-x divide-white/15 backdrop-blur-sm bg-black/20 rounded-xl px-2 py-3 w-fit mx-auto">
             {[
-              { value: '200+', label: 'Projects' },
+              { value: '1000+', label: 'Projects' },
               { value: '10+',  label: 'Years'    },
               { value: '3',    label: 'Awards'   },
             ].map((s) => (
@@ -104,7 +104,7 @@ export default function About() {
           {/* Desktop: right-aligned row */}
           <div className="hidden md:flex items-center gap-12">
             {[
-              { value: '200+', label: 'Projects' },
+              { value: '1000+', label: 'Projects' },
               { value: '10+',  label: 'Years'    },
               { value: '3',    label: 'Awards'   },
             ].map((s, i) => (

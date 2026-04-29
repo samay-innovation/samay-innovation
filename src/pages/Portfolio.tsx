@@ -60,7 +60,7 @@ export default function Portfolio() {
             Portfolio
           </h1>
           <p className="text-base font-light text-[#0b1012]/45 max-w-md mx-auto leading-relaxed">
-            200+ spaces crafted across India and beyond — residential, commercial, and hospitality.
+            1000+ spaces crafted across India and beyond — residential, commercial, and hospitality.
           </p>
         </motion.div>
         </div>

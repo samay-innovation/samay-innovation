@@ -151,9 +151,9 @@ export default function Hero() {
           {/* Stats */}
           <div className="flex items-center gap-8">
             {[
-              { value: '200+', label: 'Projects' },
+              { value: '1000+', label: 'Projects' },
               { value: '10+',  label: 'Years'    },
-              { value: '2',    label: 'Awards'   },
+              { value: '3',    label: 'Awards'   },
             ].map((s, i) => (
               <div key={s.label} className={`${i > 0 ? 'pl-8 border-l border-white/15' : ''}`}>
                 <p className="text-xl font-light text-white leading-none" style={{ fontFamily: 'Georgia, serif' }}>
